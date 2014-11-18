@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'HomeController@showWelcome');
+Route::get ('/chart',  'StockController@chartIndex');
+Route::post('/chart',  'StockController@chart');
+Route::get ('/create', 'StockController@createIndex');
+Route::post('/create', 'StockController@create');

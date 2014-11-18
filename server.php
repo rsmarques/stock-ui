@@ -16,4 +16,14 @@ if ($uri !== '/' and file_exists($requested))
 	return false;
 }
 
+//Database and table configurations
+$_SESSION['influxdb'] = array(
+			'host'      => '127.0.0.1',
+			'port'      => '8086',
+			'user'      => 'root',
+			'password'  => 'root'
+		);
+$_SESSION['db_name']    = 'stock_db';
+$_SESSION['table_name'] = 'stock';
+
 require_once $paths['public'].'/index.php';
