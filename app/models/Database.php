@@ -24,10 +24,10 @@ class Database{
 	public function connect($credentials, $db_name)
 	{
 		$this->client = new \crodas\InfluxPHP\Client(
-		    $credentials['host'],           // host
-		    $credentials['port'],           // port
-		    $credentials['user'],           // user
-		    $credentials['password']        // password
+			$credentials['host'],           // host
+			$credentials['port'],           // port
+			$credentials['user'],           // user
+			$credentials['password']        // password
 		);
 	}
 
