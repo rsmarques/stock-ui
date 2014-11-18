@@ -9,7 +9,7 @@ Simple project that simulates the behavior of a stock during a day.
 
 ## Requirements
 
-In order to build the application a installation of [Composer]{https://getcomposer.org/} and [InfluxDB](http://influxdb.com/) is required.
+In order to build the application a installation of [Composer](https://getcomposer.org/) and [InfluxDB](http://influxdb.com/) is required.
 
 ## Usage
 
